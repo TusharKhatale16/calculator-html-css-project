@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #3B4664 ;
+        }
+        .calculator-body{
+            margin: 25px auto;
+            width: 230px;
+            height: 300px;
+            /* background-color: white; */
+            padding: 25px;
+            border-radius: 20px;
+        }
+        .calculator-screen{
+            border-radius: 5px;
+            height: 25px;
+            width: 210px;
+            text-align: right;
+            padding: 15px 10px;
+            background-color: #181F32;
+            color: #fff;
+            font-size: larger;
+            border: none;
+            border: 10px;
+        }
+        .btn-container{
+            border-radius: 5px;
+            height: 230px;
+            background-color: #181F32;
+            margin: 10px 0;
+            margin-top: 20px;
+            padding: 10px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn{
+            cursor: pointer;
+            font-weight: bolder;
+            border: solid 1px #181F32;
+            height: 35px;
+            width: 40px;
+            padding: 5px;
+            text-align: center;
+            margin: 6px;
+            color: #2C3E50;
+            border-radius: 5px;
+        }
+        .btn-rest ,.btn-equal {
+            width: 93px;
+        }
+        .btn-rest, .btn-del{
+            background-color: #354B63;
+            color: #FFFFFF;
+        }
+        .btn-equal{
+            background-color: #EB4D4B;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <input class="calculator-screen" type="text" value="0">
+        <div class="btn-container">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn btn-del">DEL</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">+</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn">/</button>
+            <button class="btn">X</button>
+            <button class="btn btn-rest">REST</button>
+            <button class="btn btn-equal">=</button>   
+        </div>
+    </div>
+</body>
+</html>
